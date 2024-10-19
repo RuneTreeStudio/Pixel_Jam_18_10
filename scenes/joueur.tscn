@@ -7,8 +7,8 @@
 size = Vector2(193, 192)
 
 [node name="Joueur" type="Sprite2D"]
-position = Vector2(201, 937)
-scale = Vector2(0.6, 0.6)
+position = Vector2(205, 937)
+scale = Vector2(0.56, 0.6)
 texture = ExtResource("1_nfi04")
 script = ExtResource("2_jg4sr")
 metadata/_edit_group_ = true

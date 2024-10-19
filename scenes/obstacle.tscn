@@ -9,7 +9,7 @@
 size = Vector2(365, 365)
 
 [node name="Obstacle" type="Sprite2D" groups=["obstacle"]]
-position = Vector2(65, 36)
+position = Vector2(91, 36)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("1_nxeut")
 script = ExtResource("1_q2nv3")
@@ -17,7 +17,6 @@ obstacle_scene = SubResource("PackedScene_lqyut")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." groups=["obstacle"]]
 position = Vector2(2.50003, -2.5)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_orohh")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." groups=["obstacle"]]
@@ -25,9 +24,9 @@ shape = SubResource("RectangleShape2D_orohh")
 [node name="Point_1" type="Marker2D" parent="." groups=["obstacle"]]
 
 [node name="Point_2" type="Marker2D" parent="." groups=["obstacle"]]
-position = Vector2(755, 0)
+position = Vector2(710, 0)
 
 [node name="Point_3" type="Marker2D" parent="." groups=["obstacle"]]
-position = Vector2(1340, 0)
+position = Vector2(1280, 0)
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
