@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://uoafdfubgnbl" path="res://scenes/score.tscn" id="4_nrfmq"]
 
 [node name="Beer Chug" type="Node2D"]
+position = Vector2(207, 308)
 
 [node name="Beer2" parent="." instance=ExtResource("1_7w24d")]
 position = Vector2(74, -39)
