@@ -27,4 +27,3 @@ func _on_visible_on_screen_notifier_2d_screen_exited() -> void:
 
 	# Spawn the mob by adding it to the Main scene.
 	add_child(obstacle)
-	queue_free()

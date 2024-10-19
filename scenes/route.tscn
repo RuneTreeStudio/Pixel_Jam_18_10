@@ -134,8 +134,8 @@ animations = [{
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 z_index = -20
 z_as_relative = false
-position = Vector2(219, 463)
-scale = Vector2(5.3, 6.65089)
+position = Vector2(201.5, 463)
+scale = Vector2(4.8625, 6.65089)
 sprite_frames = SubResource("SpriteFrames_1n1v2")
 animation = &"route"
 autoplay = "route"

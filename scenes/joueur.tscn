@@ -1,21 +1,40 @@
-[gd_scene load_steps=4 format=3 uid="uid://bqnq6fur6ofm1"]
+[gd_scene load_steps=6 format=3 uid="uid://bqnq6fur6ofm1"]
 
-[ext_resource type="Texture2D" uid="uid://deqa44amc7t2w" path="res://assets/sprite character 32 back-1.png.png" id="1_6hsem"]
 [ext_resource type="Script" path="res://scripts/joueur.gd" id="2_jg4sr"]
+[ext_resource type="Texture2D" uid="uid://cqk7r5763q6dd" path="res://assets/sprite 128 course 1.png" id="3_8tqev"]
+[ext_resource type="Texture2D" uid="uid://dueyvwul86dcv" path="res://assets/sprite 128 course 2.png" id="4_wrovt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_s4164"]
 size = Vector2(64.2857, 125)
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_21uxr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_8tqev")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_wrovt")
+}],
+"loop": true,
+"name": &"MisterWEB qui court",
+"speed": 3.0
+}]
+
 [node name="Joueur" type="Sprite2D"]
 position = Vector2(229.58, 949.7)
 scale = Vector2(0.787813, 0.776563)
-texture = ExtResource("1_6hsem")
 script = ExtResource("2_jg4sr")
-metadata/_edit_group_ = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-7.14288, 2.5)
+position = Vector2(-17.2975, 2.5)
 shape = SubResource("RectangleShape2D_s4164")
 
 [node name="StartPos" type="Marker2D" parent="."]
 position = Vector2(1.78568, 0)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-7.61615, 0)
+sprite_frames = SubResource("SpriteFrames_21uxr")
+animation = &"MisterWEB qui court"
+autoplay = "MisterWEB qui court"
