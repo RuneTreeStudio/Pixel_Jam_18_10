@@ -1,0 +1,29 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5vovraljsr3p"]
+
+[ext_resource type="PackedScene" uid="uid://2r3mwm3b3say" path="res://scenes/beer.tscn" id="1_7w24d"]
+[ext_resource type="PackedScene" uid="uid://c3tvw5uf4vcp5" path="res://scenes/player.tscn" id="2_vrm8v"]
+[ext_resource type="PackedScene" uid="uid://mmpl06nb0ltq" path="res://scenes/drunk_bar.tscn" id="3_rg4j1"]
+[ext_resource type="PackedScene" uid="uid://uoafdfubgnbl" path="res://scenes/score.tscn" id="4_nrfmq"]
+
+[node name="Beer Chug" type="Node2D"]
+
+[node name="Beer2" parent="." instance=ExtResource("1_7w24d")]
+position = Vector2(74, -39)
+
+[node name="Beer" parent="." instance=ExtResource("1_7w24d")]
+position = Vector2(60, -39)
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(7, 7)
+
+[node name="Player" parent="." instance=ExtResource("2_vrm8v")]
+unique_name_in_owner = true
+position = Vector2(-40, 4)
+scale = Vector2(0.12, 0.12)
+score = ExtResource("4_nrfmq")
+
+[node name="Scores" type="Node" parent="Player"]
+
+[node name="Drunk Meter" parent="." instance=ExtResource("3_rg4j1")]
+position = Vector2(58, -32)
+scale = Vector2(0.08, 0.08)
