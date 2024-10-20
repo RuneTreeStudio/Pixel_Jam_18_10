@@ -6,25 +6,26 @@
 [ext_resource type="PackedScene" uid="uid://uoafdfubgnbl" path="res://scenes/score.tscn" id="4_nrfmq"]
 
 [node name="Beer Chug" type="Node2D"]
-position = Vector2(207, 308)
+position = Vector2(167, 322)
 
 [node name="Beer2" parent="." instance=ExtResource("1_7w24d")]
-position = Vector2(74, -39)
+position = Vector2(50, -33)
 
 [node name="Beer" parent="." instance=ExtResource("1_7w24d")]
-position = Vector2(60, -39)
+position = Vector2(36, -33)
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(7, 7)
+offset = Vector2(0, 120)
+zoom = Vector2(3, 3)
 
 [node name="Player" parent="." instance=ExtResource("2_vrm8v")]
 unique_name_in_owner = true
-position = Vector2(-40, 4)
+position = Vector2(-31, 1.19209e-07)
 scale = Vector2(0.12, 0.12)
 score = ExtResource("4_nrfmq")
 
 [node name="Scores" type="Node" parent="Player"]
 
 [node name="Drunk Meter" parent="." instance=ExtResource("3_rg4j1")]
-position = Vector2(58, -32)
+position = Vector2(32, -26)
 scale = Vector2(0.08, 0.08)
