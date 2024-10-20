@@ -19,5 +19,3 @@ func _process(delta: float) -> void:
 	print("beer val: ", player.beer_val)
 	print("%: ", drunk_bar.value)
 	
-		
-	
