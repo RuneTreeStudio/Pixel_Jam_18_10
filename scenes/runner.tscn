@@ -1,10 +1,12 @@
-[gd_scene load_steps=4 format=3 uid="uid://ofh3sm5241ut"]
+[gd_scene load_steps=5 format=3 uid="uid://ofh3sm5241ut"]
 
+[ext_resource type="Script" path="res://scenes/runner.gd" id="1_rpth8"]
 [ext_resource type="PackedScene" uid="uid://bqnq6fur6ofm1" path="res://scenes/joueur.tscn" id="1_wipg5"]
 [ext_resource type="PackedScene" uid="uid://2fspdgbq6wri" path="res://scenes/route.tscn" id="2_8bxet"]
 [ext_resource type="PackedScene" uid="uid://dcf0w62ro7pat" path="res://scenes/obstacle.tscn" id="3_orej0"]
 
 [node name="runner" type="Node2D"]
+script = ExtResource("1_rpth8")
 
 [node name="Joueur" parent="." instance=ExtResource("1_wipg5")]
 z_index = 20
@@ -16,3 +18,6 @@ layer = -1
 z_index = 20
 position = Vector2(303.3, 979.209)
 scale = Vector2(0.157563, 0.155313)
+
+[node name="Mob Timer" type="Timer" parent="."]
+wait_time = 0.5
