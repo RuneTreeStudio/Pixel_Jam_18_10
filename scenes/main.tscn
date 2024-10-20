@@ -29,7 +29,7 @@ one_shot = true
 [node name="ScoreTimer" type="Timer" parent="."]
 
 [node name="BeerChugTimer" type="Timer" parent="."]
-wait_time = 30.0
+wait_time = 10.0
 
 [node name="Beer Chug" parent="." instance=ExtResource("5_8wyeq")]
 

@@ -50,7 +50,7 @@ func _on_start_timer_timeout() -> void:
 
 
 func _on_beer_chug_timeout() -> void:
-	$BeerChug.hide()
+	get_tree().call_group("Beer", "hide")
 	$Joueur.show()
 	$route.show()
 	$obstacle.show()
