@@ -29,3 +29,7 @@ func _on_mob_timer_timeout() -> void:
 
 	# Spawn the mob by adding it to the Main scene.
 	add_child(obstacle)
+
+
+func _on_main_route() -> void:
+	pass # Replace with function body.
