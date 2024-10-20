@@ -22,7 +22,7 @@ animations = [{
 }]
 
 [node name="Joueur" type="Sprite2D"]
-position = Vector2(229.58, 949.7)
+position = Vector2(220.58, 949.7)
 scale = Vector2(0.787813, 0.776563)
 script = ExtResource("2_jg4sr")
 

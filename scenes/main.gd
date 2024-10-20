@@ -4,8 +4,8 @@ extends Node
 var score
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass
-
+	$Joueur.hide()
+	$Obstacle.hide()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -40,9 +40,17 @@ func _on_mob_timer_timeout() -> void:
 
 
 func _on_score_timer_timeout() -> void:
-	score += 1
+	score -= 1
 
 
 func _on_start_timer_timeout() -> void:
 	$MobTimer.start()
 	$ScoreTimer.start()
+	$BeerChugTimer.start()
+
+
+func _on_beer_chug_timeout() -> void:
+	$BeerChug.hide()
+	$Joueur.show()
+	$route.show()
+	$obstacle.show()
