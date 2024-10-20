@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://ofh3sm5241ut"]
+
+[ext_resource type="PackedScene" uid="uid://bqnq6fur6ofm1" path="res://scenes/joueur.tscn" id="1_wipg5"]
+[ext_resource type="PackedScene" uid="uid://2fspdgbq6wri" path="res://scenes/route.tscn" id="2_8bxet"]
+[ext_resource type="PackedScene" uid="uid://dcf0w62ro7pat" path="res://scenes/obstacle.tscn" id="3_orej0"]
+
+[node name="runner" type="Node2D"]
+
+[node name="Joueur" parent="." instance=ExtResource("1_wipg5")]
+z_index = 20
+
+[node name="Route" parent="." instance=ExtResource("2_8bxet")]
+layer = -1
+
+[node name="Obstacle" parent="." instance=ExtResource("3_orej0")]
+z_index = 20
+position = Vector2(303.3, 979.209)
+scale = Vector2(0.157563, 0.155313)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dcf0w62ro7pat"]
 
-[ext_resource type="Texture2D" uid="uid://6t3wcjuyxg3m" path="res://assets/0957a9756995850.jpg" id="1_nxeut"]
+[ext_resource type="Texture2D" uid="uid://ii2nrigksib7" path="res://assets/0957a9756995850.jpg" id="1_nxeut"]
 [ext_resource type="Script" path="res://scripts/obstacle.gd" id="1_q2nv3"]
 
 [sub_resource type="PackedScene" id="PackedScene_lqyut"]

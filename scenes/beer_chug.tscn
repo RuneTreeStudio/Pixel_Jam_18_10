@@ -5,25 +5,25 @@
 [ext_resource type="PackedScene" uid="uid://mmpl06nb0ltq" path="res://scenes/drunk_bar.tscn" id="3_rg4j1"]
 [ext_resource type="PackedScene" uid="uid://uoafdfubgnbl" path="res://scenes/score.tscn" id="4_nrfmq"]
 
-[node name="BeerChug" type="Node2D" groups=["Beer"]]
+[node name="Beer Chug" type="Node2D"]
 position = Vector2(167, 322)
 
-[node name="Beer2" parent="." groups=["Beer"] instance=ExtResource("1_7w24d")]
+[node name="Beer2" parent="." instance=ExtResource("1_7w24d")]
 position = Vector2(50, -33)
 
-[node name="Beer" parent="." groups=["Beer"] instance=ExtResource("1_7w24d")]
+[node name="Beer" parent="." instance=ExtResource("1_7w24d")]
 position = Vector2(36, -33)
 
-[node name="Camera2D" type="Camera2D" parent="." groups=["Beer"]]
+[node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(3, 3)
 
-[node name="Player" parent="." groups=["Beer"] instance=ExtResource("2_vrm8v")]
+[node name="Player" parent="." instance=ExtResource("2_vrm8v")]
 unique_name_in_owner = true
 position = Vector2(-31, 1.19209e-07)
 scale = Vector2(0.12, 0.12)
 score = ExtResource("4_nrfmq")
 
-[node name="Scores" type="Node" parent="Player" groups=["Beer"]]
+[node name="Scores" type="Node" parent="Player"]
 
 [node name="Drunk Meter" parent="." instance=ExtResource("3_rg4j1")]
 position = Vector2(32, -26)
